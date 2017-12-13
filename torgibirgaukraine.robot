@@ -866,7 +866,7 @@ Login
   Wait Until Page Contains Element    xpath=//a[@href='#parameters']   45
 
 Скасування рішення кваліфікаційної комісії
-  [Arguments]   ${user_name}   ${auction_id}
+  [Arguments]   ${user_name}   ${auction_id}   ${award_num}
   torgibirgaukraine.Пошук тендера по ідентифікатору   ${user_name}   ${auction_id}
   Перейти в розділ купую
   Wait Until Keyword Succeeds   10 x   15 s   Run Keywords
